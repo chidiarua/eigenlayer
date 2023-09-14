@@ -1,0 +1,24 @@
+{
+  "name": "eigenlayer",
+  "version": "1.0.0",
+  "description": "cloning the defi/eth restaking protocol,  eigenLayer.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./css/main.css",
+    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chidiarua/eigenlayer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chidiarua/eigenlayer/issues"
+  },
+  "homepage": "https://github.com/chidiarua/eigenlayer#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Repro;
+    src: url(./assets/ABCReproVariable.woff2) format("woff2");
+}
+                
+
+
+body{
+    font-family: 'Repro', sans-serif
+}
