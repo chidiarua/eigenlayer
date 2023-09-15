@@ -14,13 +14,14 @@
             crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
-    <body class="bg-themeBlue">
-        <nav class="relative bg-white w-full top-0">
+    <body class="bg-themeBlue md:bg-white">
+        <nav class="relative bg-white w-full top-0 md:fixed">
             <!--nav items container-->
             <div
-                class="flex justify-between items-center px-3 py-2 text-themeBlue font-light">
+                class="flex justify-between items-center px-3 py-2 text-themeBlue font-light md:px-20">
                 <!--logo-->
-                <img src="./images/eigenlogo.png" class="w-9 h-9">
+                <img src="./images/eigenlogo.png"
+                    class="w-9 h-9 md:w-14 md:h-14">
                 <div class="flex items-center gap-6">
                     <h3 class="hidden md:block cursor-pointer">DOCUMENTATION</h3>
                     <a
@@ -32,10 +33,10 @@
                 </div>
             </div>
         </nav>
-        <section id="hero" class="mt-14">
+        <section id="hero" class="mt-14 md:mt-10 md:bg-themeBlue md:py-20">
             <div class="text-center">
                 <h4 class="text-white text-2xl mb-5">To Start restaking</h4>
-                <a
+                <a href="#"
                     class="bg-white  text-themeBlue rounded-xl px-5 py-2 cursor-pointer">Connect
                     to
                     Wallet</a>
@@ -49,7 +50,7 @@
                     <div
                         class="flex gap-5 items-center px-5 pt-2 text-themeBlue">
                         <div class="w-8 h-8">
-                            <img src="./images/rETH.svg" class>
+                            <img src="./images/rETH.svg">
                         </div>
                         <div>
                             <p>Rocket Pool Ether</p>
@@ -71,7 +72,7 @@
                         </div>
                     </div>
                     <div class="mt-5">
-                        <a
+                        <a href="#"
                             class="bg-themeBlue px-12 py-2 text-white mx-5 rounded-lg cursor-pointer hover:bg-themeYellow">Manage
                             stake</a>
                     </div>
@@ -103,7 +104,7 @@
                         </div>
                     </div>
                     <div class="mt-5">
-                        <a
+                        <a href="#"
                             class="bg-themeBlue px-12 py-2 text-white mx-5 rounded-lg cursor-pointer hover:bg-themeYellow">Manage
                             stake</a>
                     </div>
@@ -135,7 +136,7 @@
                         </div>
                     </div>
                     <div class="mt-5">
-                        <a
+                        <a href="#"
                             class="bg-themeBlue px-12 py-2 text-white mx-5 rounded-lg cursor-pointer hover:bg-themeYellow">Manage
                             stake</a>
                     </div>
@@ -146,7 +147,7 @@
                 <div
                     class="flex gap-5 items-center px-5 pt-2 text-themeBlue">
                     <div class="w-8 h-8">
-                        <img src="./images/cbethicon.png" class>
+                        <img src="./images/ETH.png" class>
                     </div>
                     <div>
                         <p>Beacon Chain Et...</p>
@@ -164,19 +165,150 @@
                     <div class="text-right">
                         <p>0.0000</p>
                         <p>0.0000</p>
-                        <p>20,732.2009</p>
+                        <p>34,496.0000</p>
                     </div>
                 </div>
                 <div class="mt-5">
-                    <a
+                    <a href="#"
                         class="bg-gray-300 px-10 py-2 text-white mx-5 rounded-lg hover:bg-yellow-100 cursor-not-allowed">Create
                         EigenPod</a>
                 </div>
             </div>
         </section>
-        <footer class="mt-10">
+        <div id="md_pools" class="hidden mt-10 md:block">
+            <!--dash container-->
+            <div class="py-5">
+                <!--dash heading-->
+                <div
+                    class="flex justify-between text-themeBlue mx-20 px-10">
+                    <div class="flex">
+                        <p>TOKEN <i class="fa-solid fa-caret-down text-xs"></i></p></div>
+                    <div class="flex">
+                        <p>RESTAKED <i class="fa-solid fa-caret-down text-xs"></i></p></div>
+                    <div class="flex">
+                        <p>RESTAKED POINTS <i
+                                class="fa-solid fa-caret-down text-xs"></i></p></div>
+                    <div class="flex">
+                        <p class>TVL <i class="fa-solid fa-caret-down text-xs"></i></p></div>
+                </div>
+                <!--pool & details-->
+                <div class="mt-4">
+                    <div
+                        class="flex text-themeBlue items-center justify-between hover:bg-accent1 cursor-pointer rounded-lg py-3 mx-20 pl-3 pr-10">
+                        <div class="flex gap-2">
+                            <div class="w-6 h-6">
+                                <img src="./images/rETH.svg">
+                            </div>
+                            <div>
+                                <p>Rocket Pool Ether</p>
+                                <p
+                                    class="border border-themeBlue rounded-full px-2 text-xs w-fit">rETH</p>
+                            </div>
+                        </div>
+                        <div class>
+                            <p>0.0000</p>
+                        </div>
+                        <div>
+                            <p>0.0000</p>
+                        </div>
+                        <div>
+                            <p>20,731.561</p>
+                        </div>
+                    </div>
+                    <!--lido staked eth-->
+                    <div
+                        class="flex text-themeBlue items-center justify-between hover:bg-accent1 cursor-pointer rounded-lg py-3 mx-20 pl-3 pr-10">
+                        <div class="flex gap-2">
+                            <div class="w-6 h-6">
+                                <img src="./images/stETH.svg">
+                            </div>
+                            <div>
+                                <p>Lido Staked Ether</p>
+                                <p
+                                    class="border border-themeBlue rounded-full px-2 text-xs w-fit">stETH</p>
+                            </div>
+                        </div>
+                        <div class>
+                            <p>0.0000</p>
+                        </div>
+                        <div>
+                            <p>0.0000</p>
+                        </div>
+                        <div>
+                            <p>20,731.561</p>
+                        </div>
+                    </div>
+                    <!--coinbase staked-->
+                    <div
+                        class="flex text-themeBlue items-center justify-between hover:bg-accent1 cursor-pointer rounded-lg py-3 mx-20 pl-3 pr-10">
+                        <div class="flex gap-2">
+                            <div class="w-6 h-6">
+                                <img src="./images/cbethicon.png">
+                            </div>
+                            <div>
+                                <p>Coinbase Staked <soan class="pr-2"></soan></p>
+                                <p
+                                    class="border border-themeBlue rounded-full px-2 text-xs w-fit">cbETH</p>
+                            </div>
+                        </div>
+                        <div class>
+                            <p>0.0000</p>
+                        </div>
+                        <div>
+                            <p>0.0000</p>
+                        </div>
+                        <div>
+                            <p>20,731.561</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="divider"
+                    class="flex flex-row justify-evenly border-t border-themeBlue mt-5 mx-20 h-5">
+                    <div class="h-5 border-l border-themeBlue w-full"></div>
+                    <div class="h-5 border-l border-themeBlue w-full"></div>
+                    <div class="h-5 border-l border-themeBlue w-full"></div>
+                    <div class="h-5 border-l border-themeBlue w-full"></div>
+                    <div class="h-5 border-l border-themeBlue w-full"></div>
+                </div>
+                <div class="ml-24 mt-5 text-themeBlue">
+                    <p class="font-bold">NATIVE RESTAKING</p>
+                </div>
+
+                <div class="mx-24 mt-2.5 rounded-lg pb-5 flex justify-between">
+                    <div class="flex gap-1">
+                        <div
+                            class="flex gap-2 items-center px-5 pt-2 text-themeBlue">
+                            <div class="w-8 h-8">
+                                <img src="./images/ETH.png" class>
+                            </div>
+                            <div>
+                                <p>Beacon Chain Et...</p>
+                                <p
+                                    class="border border-themeBlue rounded-full px-2 text-xs w-fit">ETH</p>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <a href="#"
+                                class="bg-gray-300 px-4 py-2 text-white mx-5 rounded-sm hover:bg-yellow-100 cursor-not-allowed">Create
+                                EigenPod</a>
+                        </div>
+                    </div>
+
+                    <!--stake details-->
+                    <div class="flex justify-between text-themeBlue px-5 mt-5">
+                        <div class="text-right">
+                            <p>34,496.0000</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="mt-10 top-full">
             <div
-                class="flex gap-2 justify-end px-10 bg-accent1 bottom-0 py-2 text-themeBlue">
+                class="flex gap-2 justify-end px-10 bg-accent1 bottom-0 py-2 text-themeBlue md:py-4">
                 <p>TVL</p>
                 <p class="font-bold">175,765.0242 ETH</p>
             </div>
