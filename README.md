@@ -1,5 +1,5 @@
 # eigenlayer
-cloning the defi/eth restaking protocol,  eigenLayer.
+cloning the defi/eth restaking protocol,  eigenLayer v1.
 
 you're free to clone my repo and make improvements.
 
